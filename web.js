@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-app.get('/', function(request, response) {
+app.get('/index', function(request, response) {
       response.render('index.html');
       if (err) throw err;
       console.log('It\'s done!');
