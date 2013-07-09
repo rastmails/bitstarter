@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  fs.writeFile('index.html', 'Hello', function (err){
+      response.render('index.html');
       if (err) throw err;
       console.log('It\'s done!');
 });
