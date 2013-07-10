@@ -4,7 +4,7 @@ var buf     = new Buffer(256);
 var app     = express.createServer(express.logger());
 
 app.get('/', function(request,response){
-    response.send(buffer.toString("utf-8",content))
+    response.send(buf.toString("utf-8",content))
     if(err) throw err;
     console.log('It\'s done!');
 });
